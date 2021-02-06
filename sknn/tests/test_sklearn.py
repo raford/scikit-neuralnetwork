@@ -5,7 +5,7 @@ import numpy
 from scipy.stats import randint, uniform
 
 from sklearn.grid_search import GridSearchCV, RandomizedSearchCV
-from sklearn.cross_validation import cross_val_score
+from sklearn.model_selection import cross_val_score
 from sklearn.ensemble import VotingClassifier
     
 from sknn.mlp import Regressor as MLPR, Classifier as MLPC

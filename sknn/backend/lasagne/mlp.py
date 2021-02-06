@@ -19,7 +19,7 @@ import theano
 import sklearn.base
 import sklearn.pipeline
 import sklearn.preprocessing
-import sklearn.cross_validation
+import sklearn.model_selection
 
 import theano.tensor as T
 import lasagne.layers
@@ -246,7 +246,7 @@ class MultiLayerPerceptronBackend(BaseBackend):
 
         if self.valid_size > 0.0:
             assert self.valid_set is None, "Can't specify valid_size and valid_set together."
-            X, X_v, y, y_v = sklearn.cross_validation.train_test_split(
+            X, X_v, y, y_v = sklearn.model_selection.train_test_split(
                                 X, y,
                                 test_size=self.valid_size,
                                 random_state=self.random_state)

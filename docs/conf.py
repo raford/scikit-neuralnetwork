@@ -45,7 +45,7 @@ class Mock(MagicMock):
 
 MOCK_MODULES = ['numpy', 'theano',
                 'sklearn', 'sklearn.base', 'sklearn.pipeline',
-                'sklearn.cross_validation', 'sklearn.preprocessing']
+                'sklearn.model_selection', 'sklearn.preprocessing']
 
 for fullname in MOCK_MODULES:
     segments = []

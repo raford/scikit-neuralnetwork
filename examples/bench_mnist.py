@@ -13,7 +13,7 @@ np.set_printoptions(precision=4)
 np.set_printoptions(suppress=True)
 
 from sklearn.base import clone
-from sklearn.cross_validation import train_test_split
+from sklearn.model_selection import train_test_split
 from sklearn.datasets import fetch_mldata
 from sklearn.metrics import classification_report
 
