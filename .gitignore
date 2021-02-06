@@ -66,3 +66,6 @@ docs/_build/
 target/
 _libs
 examples/*.gz
+
+# OSX files
+.DS_Store
